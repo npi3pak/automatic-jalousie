@@ -10,8 +10,8 @@
 #define ButtonUpCode = 0xFF9867;
 #define ButtonDownCode = 0xFF6897;
 
-int MotorPin1 = 8;
-int MotorPin2 = 9;
+int motorpin1 = 8;
+int motorpin2 = 9;
 int potPin = A0;
 int led = 13;
 int IR = 6;
