@@ -1,14 +1,14 @@
-#include <IRremote.h>
+#include <irremote.h>
 // arduino pro mini
 // !!!scatch need IRrecv lib!!!
 
-#define CenterPinValue = CenterPinValue;
-#define UpPinValue = UpPinValue;
-#define DownPinValue = DownPinValue;
-#define ButtonOpenCode = 0xDAEA83EC;
-#define ButtonCloseCode = 0x2BAFCEEC;
-#define ButtonUpCode = 0xFF9867;
-#define ButtonDownCode = 0xFF6897;
+#define CenterPinValue 50
+#define UpPinValue 10
+#define DownPinValue 1000
+#define ButtonOpenCode 0xDAEA83EC
+#define ButtonCloseCode 0x2BAFCEEC
+#define ButtonUpCode 0xFF9867
+#define ButtonDownCode 0xFF6897
 
 int motorpin1 = 8;
 int motorpin2 = 9;
@@ -59,7 +59,7 @@ void up()
   {
     digitalWrite(motorpin2, LOW);
     digitalWrite(motorpin1, HIGH);
-    delay(UpPinValue0);
+    delay(10);
   }
   digitalWrite(motorpin2, LOW);
   digitalWrite(motorpin1, LOW); 
@@ -71,7 +71,7 @@ void down()
   {
     digitalWrite(motorpin1, LOW);
     digitalWrite(motorpin2, HIGH);
-    delay(UpPinValue0);
+    delay(10);
   }
   digitalWrite(motorpin2, LOW);
   digitalWrite(motorpin1, LOW); 
